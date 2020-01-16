@@ -1,0 +1,179 @@
+linux Tasks
+
+                                TASK 1
+
+1.LS 
+
+recruit@umuzi:~$ ls
+Desktop    idea-IC-191.6183.87         Music     Templates
+Documents  ideaIC-2019.1-jbr11.tar.gz  Pictures  Videos
+Downloads  IdeaProjects  
+
+it displays files that are in this current directory.
+
+2.PWD
+
+recruit@umuzi:~$ pwd
+/home/recruit
+
+ it displays your current directory
+
+3. recruit@umuzi:~$ mkdir workspace
+    recruit@umuzi:~$ cd workspace
+    recruit@umuzi:~/workspace$ 
+
+4. its empty, it means that nothing has been saved in this directory.
+
+5. recruit@umuzi:~/workspace$ touch README.md 
+     recruit@umuzi:~/workspace$ 
+
+6. recruit@umuzi:~/workspace$ cp README.md CHANGELOG.md
+recruit@umuzi:~/workspace$ 
+
+
+
+                                TASK 2
+
+recruit@umuzi:~/workspace$ touch exercise.md
+recruit@umuzi:~/workspace$ mv exercise.md /tmp
+recruit@umuzi:~/workspace$ rm /tmp/exercise.md
+
+
+                                TASK 3
+
+3.1 
+recruit@umuzi:~/workspace$ touch umuzi.md
+recruit@umuzi:~/workspace$ touch recruits.md
+recruit@umuzi:~/workspace$ touch cohort.md
+
+3.2
+recruit@umuzi:~/workspace$ cat > umuzi.md
+Boitumelo
+^Z
+[1]+  Stopped                 cat > umuzi.md
+
+recruit@umuzi:~/workspace$ cat > recruits.md
+Smart and Beautiful
+^Z
+[2]+  Stopped                 cat > recruits.md
+recruit@umuzi:~/workspace$ cat > cohort.md
+Brave and Bold
+^Z
+[3]+  Stopped                 cat > cohort.md
+
+
+3.3
+recruit@umuzi:~/workspace$ cat umuzi.md recruits.md cohort.md
+Smart and Beautiful
+Brave and Bold
+Smart and Beautiful
+Brave and Bold
+
+3.4
+recruit@umuzi:~/workspace$ touch summary.md
+recruit@umuzi:~/workspace$ cat umuzi.md recruits.md cohort.md > summary.md
+
+3.5
+recruit@umuzi:~/workspace$ cat >> summary.md
+THE END
+^Z
+[4]+  Stopped                 cat >> summary.md
+recruit@umuzi:~/workspace$ cat summary.md
+Smart and Beautiful
+Brave and Bold
+Smart and Beautiful
+Brave and Bold
+THE END
+
+
+                                TASK 4
+
+4.1
+recruit@umuzi:~$ locate umuzi
+
+4.2
+recruit@umuzi:~/workspace$ touch search_result.md
+recruit@umuzi:~/workspace$ locate umuzi > search_result.md
+
+
+                                TASK 5
+
+5.1
+recruit@umuzi:~$ cd Documents
+recruit@umuzi:~/Documents$ touch pad.md
+
+5.2
+recruit@umuzi:~/Documents$ cd ..
+recruit@umuzi:~$ cd Desktop
+recruit@umuzi:~/Desktop$ mkdir Work
+
+5.3
+recruit@umuzi:~/Desktop$ cp ~/Documents/pad.md pad_copy.md
+
+5.4
+recruit@umuzi:~/Desktop$ locate updatedb
+/etc/updatedb.conf
+/etc/alternatives/updatedb
+/etc/alternatives/updatedb.8.gz
+/usr/bin/updatedb
+/usr/bin/updatedb.mlocate
+/usr/share/man/man5/updatedb.conf.5.gz
+/usr/share/man/man8/updatedb.8.gz
+/usr/share/man/man8/updatedb.mlocate.8.gz
+
+5.5
+recruit@umuzi:~/Desktop$ cd -
+/home/recruit
+
+5.6
+recruit@umuzi:~$ locate pad_copy.md
+/home/recruit/Desktop/pad_copy.md
+
+
+                                TASK 6
+
+6.1
+recruit@umuzi:~$ find -iname '*.pdf'
+./Downloads/Copy of Research & User Interviews.pdf
+
+6.2
+recruit@umuzi:~$ find ./Downloads -name "*.pdf" -exec cp {} ~/Desktop \;
+
+6.3
+
+recruit@umuzi:~$ find . -maxdepth 1 -newermt "2020-01-16"
+.
+./.xsession-errors
+./.ICEauthority
+./.xsession-errors.old
+./Desktop
+./Documents
+./.config
+./.gconf
+./.bash_history
+./workspace
+./Linux-Challenges
+./.Xauthority
+
+
+                                TASK 7
+
+7.1
+ recruit@umuzi:~$ nano my_bio.md
+
+7.2 
+then you use Ctrl+O to save and Ctrl+x to close editor
+
+7.3
+recruit@umuzi:~$ mkdir my_files
+recruit@umuzi:~$ mv my_bio.md my_files
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+
+
+
+
+
+
